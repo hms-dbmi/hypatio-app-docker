@@ -1,0 +1,22 @@
+{
+    "family": "hypatio-app",
+    "containerDefinitions": [
+        {
+            "name": "hypatio-app",
+            "image": "dbmi/hypatio-app:development",
+            "cpu": 1,
+            "memory": 200,
+            "memoryReservation": 200,
+			"portMappings": [
+				{
+				  "containerPort": 80,
+				  "hostPort": 80
+				} ],
+			"environment" : [
+				{ "name" : "VAULT_ADDR", "value" : "https://vault.aws.dbmi.hms.harvard.edu:443" },
+				{ "name" : "VAULT_SKIP_VERIFY", "value" : "1" },
+				{ "name" : "VAULT_PATH", "value" : "secret/dbmi/hypatio" }				
+			]				
+        }
+    ]
+}
