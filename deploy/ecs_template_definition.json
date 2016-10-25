@@ -3,7 +3,7 @@
     "containerDefinitions": [
         {
             "name": "hypatio-app",
-            "image": "dbmi/hypatio-app:development",
+            "image": "dbmi/hypatio-app-docker:development",
             "cpu": 1,
             "memory": 200,
             "memoryReservation": 200,
