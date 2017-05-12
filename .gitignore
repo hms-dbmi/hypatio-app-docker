@@ -1,0 +1,5 @@
+.DS_Store
+.idea/*
+push_to_ecr.sh
+run_hypatio-app.sh
+deploy/*
