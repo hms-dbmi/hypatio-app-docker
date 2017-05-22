@@ -1,6 +1,6 @@
 FROM dbmi/pynxgu
 
-COPY Hypatio /hypatio/
+COPY hypatio /hypatio/
 RUN pip install -r /hypatio/requirements.txt
 
 RUN mkdir /entry_scripts/
